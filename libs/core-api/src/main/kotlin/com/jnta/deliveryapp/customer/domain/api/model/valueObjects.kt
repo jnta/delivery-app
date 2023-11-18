@@ -1,4 +1,4 @@
-package com.jnta.coreapi.customer.domain.api.model
+package com.jnta.deliveryapp.customer.domain.api.model
 
 import java.io.Serializable
 import java.util.*

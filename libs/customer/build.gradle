@@ -19,10 +19,10 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
     implementation 'org.jetbrains.kotlin:kotlin-reflect'
     implementation group: 'org.axonframework', name: 'axon-spring-boot-starter', version: '4.9.0'
-    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation project(":libs:core-api")
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

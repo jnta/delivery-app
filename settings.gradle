@@ -1,2 +1,3 @@
 rootProject.name = 'delivery-app'
-include('core-api')
+include("libs:core-api")
+include("libs:customer")

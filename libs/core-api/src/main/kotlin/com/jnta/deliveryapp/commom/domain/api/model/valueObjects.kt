@@ -1,4 +1,4 @@
-package com.jnta.coreapi.commom.domain.api.model
+package com.jnta.deliveryapp.commom.domain.api.model
 
 import java.math.BigDecimal
 import java.util.*
