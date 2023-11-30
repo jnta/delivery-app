@@ -24,6 +24,9 @@ dependencies {
     implementation group: 'org.axonframework', name: 'axon-spring-boot-starter', version: '4.9.0'
     implementation project(":libs:core-api")
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    // https://mvnrepository.com/artifact/org.axonframework/axon-test
+    testImplementation 'org.axonframework:axon-test:4.9.0'
+
 }
 
 tasks.withType(KotlinCompile) {
