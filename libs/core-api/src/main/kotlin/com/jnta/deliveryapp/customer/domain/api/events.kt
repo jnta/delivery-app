@@ -1,11 +1,11 @@
-package com.jnta.coreapi.customer.domain.api
+package com.jnta.deliveryapp.customer.domain.api
 
-import com.jnta.coreapi.commom.domain.api.AuditableAbstractEvent
-import com.jnta.coreapi.commom.domain.api.model.AuditEntry
-import com.jnta.coreapi.commom.domain.api.model.Money
-import com.jnta.coreapi.commom.domain.api.model.PersonName
-import com.jnta.coreapi.customer.domain.api.model.CustomerId
-import com.jnta.coreapi.customer.domain.api.model.CustomerOrderId
+import com.jnta.deliveryapp.commom.domain.api.AuditableAbstractEvent
+import com.jnta.deliveryapp.commom.domain.api.model.AuditEntry
+import com.jnta.deliveryapp.commom.domain.api.model.Money
+import com.jnta.deliveryapp.commom.domain.api.model.PersonName
+import com.jnta.deliveryapp.customer.domain.api.model.CustomerId
+import com.jnta.deliveryapp.customer.domain.api.model.CustomerOrderId
 
 abstract class CustomerEvent(open val aggregateIdentifier: CustomerId, override val auditEntry: AuditEntry) :
     AuditableAbstractEvent(auditEntry)
