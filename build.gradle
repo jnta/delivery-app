@@ -1,36 +1,8 @@
-plugins {
-    id 'org.springframework.boot' version '3.1.5'
-    id 'io.spring.dependency-management' version '1.1.3'
-    id 'org.jetbrains.kotlin.jvm' version '1.8.22'
-    id 'org.jetbrains.kotlin.plugin.spring' version '1.8.22'
-}
-
 allprojects {
+    group 'com.jnta.deliveryapp'
+    version '1.0.0'
+
     repositories {
         mavenCentral()
     }
-}
-
-subprojects {
-    apply plugin: 'java'
-    apply plugin: 'org.jetbrains.kotlin.jvm'
-    apply plugin: 'org.springframework.boot'
-    apply plugin: 'io.spring.dependency-management'
-
-    group = 'com.jnta'
-    version = '1.0.0'
-
-    tasks.withType(JavaCompile) {
-        options.encoding = 'UTF-8'
-    }
-
-    dependencies {
-        implementation 'org.springframework.boot:spring-boot-starter'
-        // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
-        implementation 'org.apache.commons:commons-lang3:3.0'
-    }
-}
-
-tasks.named('clean', Delete) {
-    delete 'build'
 }

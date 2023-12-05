@@ -1,3 +1,4 @@
 rootProject.name = 'delivery-app'
 include("libs:core-api")
 include("libs:customer")
+include("apps:monolith")
